@@ -7,7 +7,7 @@ const myLogger = require('./logger')
 
 app.use(myLogger)
 app.use(routes)
-
+app.use(express.urlencoded({ extended: true }))
 
 
 app.get('/', (req, res) => {
