@@ -1,23 +1,17 @@
 // app.js
 const express = require('express')
 const app = express()
-const port = 3000
-
-let myLogger = function(req, res, next) {
-  let path = req.originalUrl
-  let timestamp = new Date()
-  let method = req.method
-  console.log(`Login Time is ${timestamp} | ${method} FROM ${path}`)
-  next()
-}
+const port = process.env.PORT || 3000
+const routes = express.Router()
+const myLogger = require('./logger')
 
 app.use(myLogger)
+app.use(routes)
 
 
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
-  console.log(req._httpMessage)
 })
 
 app.get('/new', (req, res) => {
@@ -35,3 +29,4 @@ app.post('/', (req, res) => {
 app.listen(port, () => {
   console.log(`App running on port ${port}`)
 })
+
