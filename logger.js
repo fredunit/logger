@@ -15,9 +15,9 @@ module.exports = myLogger = function(req, res, next) {
   timestamp.getFullYear() + '-' +
   (timestamp.getMonth() + 1) + '-' +
   timestamp.getDate() + ' ' +
-  ('0' + timestamp.getHours()).slice(-2) + ":" +
+  ('0' + timestamp.getHours()).slice(-2) + ':' +
   ('0' + timestamp.getMinutes()).slice(-2) + ':' +
-  timestamp.getSeconds()
+  ('0' + timestamp.getSeconds()).slice(-2)
 
   let method = req.method
   let start = process.hrtime()

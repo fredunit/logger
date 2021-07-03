@@ -10,20 +10,24 @@ app.use(routes)
 app.use(express.urlencoded({ extended: true }))
 
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
   res.send('Hello World!')
+  res.status(201).end()
 })
 
 app.get('/new', (req, res) => {
   res.send('新增 Todo 頁面')
+  res.status(201).end()
 })
  
 app.get('/:id', (req, res) => {
   res.send('顯示一筆 Todo')
+  res.status(201).end()
 })
 
 app.post('/', (req, res) => {
   res.send('新增一筆  Todo')
+  res.status(201).end()
 })
 
 app.listen(port, () => {
