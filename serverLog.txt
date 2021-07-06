@@ -1,13 +1,1 @@
 
-Login info are 2021-7-3 20:43:59 | GET FROM / | total time: 0.144 ms
-Login info are 2021-7-3 20:43:59 | GET FROM /favicon.ico | total time: 0.008 ms
-Login info are 2021-7-3 20:44:02 | GET FROM / | total time: 0.007 ms
-Login info are 2021-7-3 20:44:02 | GET FROM /favicon.ico | total time: 0.008 ms
-Login info are 2021-7-3 20:46:41 | GET FROM / | total time: 0.199 ms
-Login info are 2021-7-3 20:46:41 | GET FROM /favicon.ico | total time: 0.02 ms
-Login info are 2021-7-3 20:46:44 | GET FROM / | total time: 0.005 ms
-Login info are 2021-7-3 20:46:44 | GET FROM /favicon.ico | total time: 0.008 ms
-Login info are 2021-7-3 20:48:29 | GET FROM / | total time: 0.152 ms
-Login info are 2021-7-3 20:48:29 | GET FROM /favicon.ico | total time: 0.006 ms
-Login info are 2021-7-3 20:48:34 | GET FROM /new | total time: 0.008 ms
-Login info are 2021-7-3 20:48:37 | GET FROM /favicon.ico | total time: 0.007 ms
